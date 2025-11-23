@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="Cal.css">
+   <title>Calculator</title>
+</head>
+<body>
+    
+<main class="main">
+    <div class="calculator">
+      <div class="screen">
+        <div class="screen-last" id="lastOperationScreen"></div>
+        <div class="screen-current" id="currentOperationScreen">0</div>
+      </div>
+      <div class="buttons-grid">
+        <button
+          class="btn btn-pink span-2 btn-ac"
+          id="clearBtn"
+          onclick="this.blur();"
+        >
+          AC
+        </button>
+        <button
+          class="btn btn-blue span-2 btn-del"
+          id="deleteBtn"
+          onclick="this.blur();"
+        >
+        ⌫
+        </button>
+        <button class="btn" onclick="this.blur();" data-number>7</button>
+        <button class="btn" onclick="this.blur();" data-number>8</button>
+        <button class="btn" onclick="this.blur();" data-number>9</button>
+        <button class="btn" onclick="this.blur();" data-operator>÷</button>
+
+        <button class="btn" onclick="this.blur();" data-number>4</button>
+        <button class="btn" onclick="this.blur();" data-number>5</button>
+        <button class="btn" onclick="this.blur();" data-number>6</button>
+        <button class="btn" onclick="this.blur();" data-operator>×</button>
+
+        <button class="btn" onclick="this.blur();" data-number>1</button>
+        <button class="btn" onclick="this.blur();" data-number>2</button>
+        <button class="btn" onclick="this.blur();" data-number>3</button>
+        <button class="btn" onclick="this.blur();" data-operator>−</button>
+
+        <button class="btn" onclick="this.blur();" id="pointBtn">.</button>
+        <button class="btn" onclick="this.blur();" data-number>0</button>
+        <button class="btn" onclick="this.blur();" id="equalsBtn">=</button>
+        <button class="btn" onclick="this.blur();" data-operator>+</button>
+      </div>
+      --------------------------------------------------------------------------
+      <div id="extra-buttons" class="button-row">
+        <button class="btn" id="calc_denom" value="1/x" ><span class="denominator"><span class="denom-top">1</span><span class="denom-slash">/</span><span class="denom-btm">x</span></span></button>
+        <button class="btn" id="calc_sqrt" value="&radic;" >&radic;</button>
+        <button class="btn" id="calc_square" value="x2" >x<span class="exponent">2</span></button>
+        <button class="btn calc_op" id="calc_powerof" value="^" >y<span class="exponent">x</span></button>
+      </div>
+    </div>
+    <script src="Cal.js"></script>
+  </main>
+</body>
+</html>
